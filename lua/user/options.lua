@@ -35,6 +35,19 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 
+-- config colorscheme
+vim.g.gruvbox_material_background = 'hard'
+vim.g.gruvbox_material_palette = 'original'
+vim.g.gruvbox_material_enable_bold = 1
+vim.g.gruvbox_material_enable_italic = 1
+vim.g.gruvbox_material_sign_column_background = 'none'
+vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
+vim.g.transparent_background = true        -- transparent background(Default: false)
+vim.g.italic_comments = true               -- italic comments(Default: true)
+vim.g.italic_keywords = true               -- italic keywords(Default: true)
+vim.g.italic_functions = true              -- italic functions(Default: false)
+vim.g.italic_variables = true              -- italic variables(Default: false)
+vim.cmd 'colorscheme gruvbox-material'
 vim.opt.shortmess:append "c"
 
 for k, v in pairs(options) do
